@@ -1,0 +1,12 @@
+name: 'PHP Syntax Checker (Lint)'
+description: 'php syntax control (php -l)'
+inputs:
+  dir:
+    description: 'Folder to check syntax'
+    required: false
+    default: '.'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.dir }}
