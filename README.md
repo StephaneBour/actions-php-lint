@@ -27,3 +27,11 @@ StephaneBour/actions-php-lint@7.1
 StephaneBour/actions-php-lint@7.0
 StephaneBour/actions-php-lint@5.6
 ```
+
+## On success
+
+![On success](docs/on-success.png)
+
+## On failure
+
+![On success](docs/on-failure.png)
