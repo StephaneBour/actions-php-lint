@@ -1,5 +1,8 @@
 name: 'PHP Syntax Checker (Lint)'
 description: 'php syntax control (php -l)'
+branding:
+  icon: 'check-circle'
+  color: 'green'
 inputs:
   dir:
     description: 'Folder to check syntax'
