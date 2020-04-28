@@ -1,6 +1,6 @@
-FROM php:7.3-cli
+FROM php:7.4-cli
 
-LABEL version="7.3"
+LABEL version="7.4"
 LABEL repository="https://github.com/StephaneBour/actions-php-lint"
 LABEL homepage="https://github.com/StephaneBour/actions-php-lint"
 LABEL maintainer="Stéphane Bour <stephane.bour@gmail.com>"
