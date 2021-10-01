@@ -19,14 +19,7 @@ if [ ! -d "${DIR_TO_SCAN}" ] && [ ! -f "${DIR_TO_SCAN}" ]; then
   exit 2
 fi
 
-ERROR=0
-for file in $(find ${DIR_TO_SCAN} -type f -name "*.php" ! -path "./vendor/*"); do
-  RESULTS=$(php -l ${file} || true)
+find "${DIR_TO_SCAN}" -type f -name '*.php' ! -path './vendor/*' -print0 \
+     | xargs -0 -n 1 php -l | (! grep -Ev '^No syntax errors detected in ')
 
-  if [ "${RESULTS}" != "No syntax errors detected in ${file}" ]; then
-    echo "\n${RESULTS}\n"
-    ERROR=1
-  fi
-done
-
-exit "${ERROR}"
+exit "${?}"
