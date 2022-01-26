@@ -21,6 +21,8 @@ The folder to control. Default `"."`.
 
 You can use :
 ```
+StephaneBour/actions-php-lint@8.1
+StephaneBour/actions-php-lint@8.0
 StephaneBour/actions-php-lint@7.4
 StephaneBour/actions-php-lint@7.3
 StephaneBour/actions-php-lint@7.2
