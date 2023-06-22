@@ -1,6 +1,6 @@
-FROM php:8.1-cli
+FROM php:8.2-cli
 
-LABEL version="8.1"
+LABEL version="8.2"
 LABEL repository="https://github.com/StephaneBour/actions-php-lint"
 LABEL homepage="https://github.com/StephaneBour/actions-php-lint"
 LABEL maintainer="Stéphane Bour <stephane.bour@gmail.com>"
